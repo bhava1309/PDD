@@ -1,0 +1,83 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pawpal.app"
+4    android:versionCode="8"
+5    android:versionName="1.0.7" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:2:5-67
+11-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:2:22-64
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:3:5-65
+12-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:3:22-62
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:4:5-71
+13-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:4:22-68
+14    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+14-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:5:5-80
+14-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:5:22-77
+15    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+15-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:6:5-77
+15-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:6:22-74
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:7:5-79
+16-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:7:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:8:5-81
+17-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:8:22-78
+18
+19    <uses-feature
+19-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:9:5-85
+20        android:name="android.hardware.camera"
+20-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:9:19-57
+21        android:required="false" />
+21-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:9:58-82
+22    <uses-feature
+22-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:10:5-89
+23        android:name="android.hardware.microphone"
+23-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:10:19-61
+24        android:required="false" />
+24-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:10:62-86
+25
+26    <application
+26-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:12:5-28:19
+27        android:allowBackup="true"
+27-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:13:9-35
+28        android:debuggable="true"
+29        android:extractNativeLibs="true"
+30        android:icon="@drawable/app_icon"
+30-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:14:9-42
+31        android:label="PawPal"
+31-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:16:9-31
+32        android:roundIcon="@drawable/app_icon"
+32-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:15:9-47
+33        android:theme="@style/AppTheme"
+33-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:17:9-40
+34        android:usesCleartextTraffic="true" >
+34-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:18:9-44
+35        <activity
+35-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:19:9-27:20
+36            android:name="com.pawpal.app.MainActivity"
+36-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:20:13-41
+37            android:configChanges="orientation|screenSize|keyboardHidden"
+37-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:21:13-74
+38            android:exported="true" >
+38-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:22:13-36
+39            <intent-filter>
+39-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:23:13-26:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:24:17-69
+40-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:24:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:25:17-77
+42-->/Users/surya/Documents/pawpal/android/app/src/main/AndroidManifest.xml:25:27-74
+43            </intent-filter>
+44        </activity>
+45    </application>
+46
+47</manifest>

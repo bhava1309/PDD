@@ -1,0 +1,16 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "com.pawpal.app"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.pawpal.app"
+        minSdk 21
+        targetSdk 35
+        versionCode 8
+        versionName "1.0.7"
+    }
+}

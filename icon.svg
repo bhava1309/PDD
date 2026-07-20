@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="PawPal paw icon">
+  <rect width="100" height="100" rx="18" fill="#ffffff"/>
+  <path fill="#6c63ff" d="M51.7 49.7c-12.6 0-24 14.1-24 25.2 0 6.4 5.5 9.8 12.4 7.2 3.3-1.2 6.4-2.1 11.6-2.1s8.3.9 11.6 2.1c6.9 2.6 12.4-.8 12.4-7.2 0-11.1-11.4-25.2-24-25.2z"/>
+  <ellipse cx="26.2" cy="38.4" rx="8.4" ry="12.1" fill="#6c63ff" transform="rotate(-23 26.2 38.4)"/>
+  <ellipse cx="43.5" cy="27.5" rx="8.7" ry="13.1" fill="#6c63ff" transform="rotate(-5 43.5 27.5)"/>
+  <ellipse cx="60.7" cy="27.5" rx="8.7" ry="13.1" fill="#6c63ff" transform="rotate(5 60.7 27.5)"/>
+  <ellipse cx="77.9" cy="38.4" rx="8.4" ry="12.1" fill="#6c63ff" transform="rotate(23 77.9 38.4)"/>
+</svg>
