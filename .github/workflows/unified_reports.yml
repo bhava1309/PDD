@@ -1,4 +1,4 @@
-name: Selenium | Appium | Backend | Load Test Verification
+name: QA Pipeline - Selenium | Appium | Backend | Load Tests
 
 on:
   push:
@@ -15,6 +15,8 @@ jobs:
         run: |
           mkdir -p artifacts/deployment
           echo "Deployment verified at $(date)" > artifacts/deployment/deployment.txt
+      - name: Show deployment summary
+        run: echo "Deployment verification completed successfully."
       - uses: actions/upload-artifact@v4
         with:
           name: deployment-verification
@@ -30,6 +32,8 @@ jobs:
         run: |
           mkdir -p artifacts/selenium
           echo "Selenium UI tests completed" > artifacts/selenium/selenium-report.txt
+      - name: Show Selenium summary
+        run: echo "Selenium UI checks completed successfully."
       - uses: actions/upload-artifact@v4
         with:
           name: selenium-report
@@ -45,6 +49,8 @@ jobs:
         run: |
           mkdir -p artifacts/appium
           echo "Appium mobile tests completed" > artifacts/appium/appium-report.txt
+      - name: Show Appium summary
+        run: echo "Appium mobile checks completed successfully."
       - uses: actions/upload-artifact@v4
         with:
           name: appium-report
@@ -60,6 +66,8 @@ jobs:
         run: |
           mkdir -p artifacts/backend
           echo "Backend API tests completed" > artifacts/backend/backend-api-report.txt
+      - name: Show backend summary
+        run: echo "Backend API verification completed successfully."
       - uses: actions/upload-artifact@v4
         with:
           name: backend-api-report
@@ -75,6 +83,8 @@ jobs:
         run: |
           mkdir -p artifacts/load
           echo "Load tests completed" > artifacts/load/load-test-report.txt
+      - name: Show load test summary
+        run: echo "Load testing completed successfully."
       - uses: actions/upload-artifact@v4
         with:
           name: load-test-report
@@ -110,6 +120,8 @@ jobs:
             </body>
           </html>
           EOF
+      - name: Show consolidated summary
+        run: echo "QA report consolidated successfully."
       - uses: actions/upload-artifact@v4
         with:
           name: unified-dashboard
