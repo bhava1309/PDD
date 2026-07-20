@@ -1,0 +1,26 @@
+{
+  "name": "pawpal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Installable PawPal pet care app for web, Android, and iOS.",
+  "scripts": {
+    "start": "node backend/server.js",
+    "backend": "node backend/server.js",
+    "test:load:baseline": "node load-tests/baseline-load-test.js",
+    "build:web": "mkdir -p dist/assets && cp index.html dist/index.html && cp manifest.webmanifest sw.js dist/ && cp -R assets/icons dist/assets/",
+    "cap:init": "npx cap init PawPal com.pawpal.app --web-dir dist",
+    "cap:add:android": "npx cap add android",
+    "cap:add:ios": "npx cap add ios",
+    "android:prepare": "npm run build:web && npx cap sync android",
+    "cap:sync": "npm run build:web && npx cap sync",
+    "cap:open:android": "npx cap open android",
+    "cap:open:ios": "npx cap open ios"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/ios": "^7.0.0",
+    "serve": "^14.2.4"
+  }
+}

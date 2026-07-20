@@ -1,0 +1,15 @@
+{
+  "name": "pawpal-400-selenium-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PawPal Node.js Selenium end-to-end test suite with 400+ test cases and Excel analysis report.",
+  "scripts": {
+    "test": "node tests/run-400-e2e.js",
+    "report": "node reports/generate-excel-report.js"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.18.1",
+    "chromedriver": "^124.0.1",
+    "exceljs": "^4.4.0"
+  }
+}

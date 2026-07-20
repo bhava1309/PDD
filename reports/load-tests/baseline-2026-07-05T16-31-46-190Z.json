@@ -1,0 +1,44 @@
+{
+  "targetUrl": "http://localhost:8787",
+  "virtualUsers": 100,
+  "durationSeconds": 60,
+  "startedAt": "2026-07-05T16:31:46.190Z",
+  "finishedAt": "2026-07-05T16:32:46.194Z",
+  "requests": 1389514,
+  "requestsPerSecond": 23157.02,
+  "failures": 0,
+  "failureRatePercent": 0,
+  "responseTimeMs": {
+    "min": 0.06,
+    "avg": 4.31,
+    "p90": 7.98,
+    "p95": 10.3,
+    "max": 103.98
+  },
+  "statusCodes": {
+    "200": 1389514
+  },
+  "endpoints": {
+    "/api/health": {
+      "requests": 416799,
+      "failures": 0
+    },
+    "/api/state": {
+      "requests": 416889,
+      "failures": 0
+    },
+    "/api/teachers": {
+      "requests": 277953,
+      "failures": 0
+    },
+    "/api/maps/resolve?query=pet%20clinics%20near%20Chennai": {
+      "requests": 138960,
+      "failures": 0
+    },
+    "/": {
+      "requests": 138913,
+      "failures": 0
+    }
+  },
+  "sampleFailures": []
+}

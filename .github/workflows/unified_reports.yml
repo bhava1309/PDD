@@ -1,128 +1,143 @@
-name: QA Pipeline - Selenium | Appium | Backend | Load Tests
+name: PawPal Unified QA Verification
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   verify_deployment:
-    name: Deployment Verification
+    name: Verify Deployment
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Verify required project files
+        run: |
+          test -f index.html
+          test -f backend/server.js
+          test -f android/settings.gradle
+          test -f selenium-e2e-node/package.json
+          test -f security-tests/expanded-backend-load-and-security.js
+          test -d outputs
       - name: Create deployment verification artifact
         run: |
           mkdir -p artifacts/deployment
-          echo "Deployment verified at $(date)" > artifacts/deployment/deployment.txt
-      - name: Show deployment summary
-        run: echo "Deployment verification completed successfully."
+          printf 'PawPal deployment verification passed\nCommit: %s\n' "$GITHUB_SHA" > artifacts/deployment/deployment.txt
       - uses: actions/upload-artifact@v4
         with:
           name: deployment-verification
           path: artifacts/deployment
 
-  selenium_ui_tests:
-    name: Selenium UI Tests
+  backend_api_tests:
+    name: Run Backend API Tests
     runs-on: ubuntu-latest
     needs: verify_deployment
     steps:
       - uses: actions/checkout@v4
-      - name: Create Selenium report artifact
-        run: |
-          mkdir -p artifacts/selenium
-          echo "Selenium UI tests completed" > artifacts/selenium/selenium-report.txt
-      - name: Show Selenium summary
-        run: echo "Selenium UI checks completed successfully."
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run backend vulnerability and API checks
+        run: node security-tests/backend-vulnerability-check.js
+      - name: Upload backend results
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-security-results
+          path: |
+            outputs/qa-approval-excel/backend-vulnerability-results-after-fix.json
+            outputs/qa-approval-excel/expanded-backend-load-security-results.json
+          if-no-files-found: warn
+
+  frontend_build:
+    name: Run Frontend Build
+    runs-on: ubuntu-latest
+    needs: verify_deployment
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm run build:web
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web-build
+          path: dist
+
+  api_load_tests:
+    name: Run API Load Tests
+    runs-on: ubuntu-latest
+    needs: verify_deployment
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Start PawPal backend
+        run: node backend/server.js > /tmp/pawpal-backend.log 2>&1 &
+      - name: Run baseline load test
+        run: node load-tests/baseline-load-test.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: api-load-results
+          path: reports/load-tests
+          if-no-files-found: warn
+
+  selenium_e2e_tests:
+    name: Run Selenium E2E Tests
+    runs-on: ubuntu-latest
+    needs: verify_deployment
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci --prefix selenium-e2e-node
+      - name: Start PawPal backend
+        run: node backend/server.js > /tmp/pawpal-backend.log 2>&1 &
+      - name: Run Selenium suite
+        run: npm test --prefix selenium-e2e-node
+      - name: Generate Selenium Excel report
+        if: always()
+        run: npm run report --prefix selenium-e2e-node
       - uses: actions/upload-artifact@v4
         with:
           name: selenium-report
-          path: artifacts/selenium
-
-  appium_mobile_tests:
-    name: Appium Mobile Tests
-    runs-on: ubuntu-latest
-    needs: verify_deployment
-    steps:
-      - uses: actions/checkout@v4
-      - name: Create Appium report artifact
-        run: |
-          mkdir -p artifacts/appium
-          echo "Appium mobile tests completed" > artifacts/appium/appium-report.txt
-      - name: Show Appium summary
-        run: echo "Appium mobile checks completed successfully."
-      - uses: actions/upload-artifact@v4
-        with:
-          name: appium-report
-          path: artifacts/appium
-
-  backend_api_tests:
-    name: Backend API Tests
-    runs-on: ubuntu-latest
-    needs: verify_deployment
-    steps:
-      - uses: actions/checkout@v4
-      - name: Create backend API report artifact
-        run: |
-          mkdir -p artifacts/backend
-          echo "Backend API tests completed" > artifacts/backend/backend-api-report.txt
-      - name: Show backend summary
-        run: echo "Backend API verification completed successfully."
-      - uses: actions/upload-artifact@v4
-        with:
-          name: backend-api-report
-          path: artifacts/backend
-
-  load_tests:
-    name: Load Tests
-    runs-on: ubuntu-latest
-    needs: verify_deployment
-    steps:
-      - uses: actions/checkout@v4
-      - name: Create load test report artifact
-        run: |
-          mkdir -p artifacts/load
-          echo "Load tests completed" > artifacts/load/load-test-report.txt
-      - name: Show load test summary
-        run: echo "Load testing completed successfully."
-      - uses: actions/upload-artifact@v4
-        with:
-          name: load-test-report
-          path: artifacts/load
+          path: selenium-e2e-node/reports
+          if-no-files-found: warn
 
   consolidate_reports:
-    name: Consolidate Reports
+    name: Consolidate and Verify Reports
     runs-on: ubuntu-latest
-    needs: [verify_deployment, selenium_ui_tests, appium_mobile_tests, backend_api_tests, load_tests]
+    needs: [verify_deployment, backend_api_tests, frontend_build, api_load_tests, selenium_e2e_tests]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
-          path: consolidated_artifacts
-      - name: Generate unified dashboard
+          path: artifacts
+      - name: Verify report artifacts
+        run: |
+          test -d artifacts
+          find artifacts -type f -maxdepth 3 -print
+      - name: Create unified dashboard summary
         run: |
           mkdir -p report
-          cat > report/unified_report.html <<'EOF'
-          <!doctype html>
-          <html>
-            <head>
-              <meta charset="utf-8" />
-              <title>Unified QA Report</title>
-            </head>
-            <body>
-              <h1>Unified QA Report</h1>
-              <ul>
-                <li>Selenium UI Tests</li>
-                <li>Appium Mobile Tests</li>
-                <li>Backend API Tests</li>
-                <li>Load Tests</li>
-              </ul>
-            </body>
-          </html>
+          cat > report/unified_report.md <<'EOF'
+          # PawPal Unified QA Verification
+
+          The workflow completed deployment verification, backend security checks,
+          frontend build validation, API load testing, and Selenium E2E testing.
+
+          Detailed Excel reports are stored under `outputs/` and workflow artifacts.
           EOF
-      - name: Show consolidated summary
-        run: echo "QA report consolidated successfully."
       - uses: actions/upload-artifact@v4
         with:
           name: unified-dashboard
-          path: report/unified_report.html
+          path: report/unified_report.md

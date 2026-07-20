@@ -1,0 +1,303 @@
+PAWPAL WEBSITE - FRONTEND AND BACKEND STEP BY STEP EXPLANATION
+
+Project folder:
+/Users/surya/Documents/pawpal
+
+Main webpage file:
+/Users/surya/Documents/pawpal/pawpal.html
+
+Backend file:
+/Users/surya/Documents/pawpal/backend/server.js
+
+Database file:
+/Users/surya/Documents/pawpal/backend/data/pawpal-db.json
+
+
+1. WHAT THIS WEBSITE DOES
+
+PawPal is a pet care website and mobile-style web app. It helps a pet owner login,
+register as a new user, enter pet details, view a pet dashboard, track health,
+book doctors, find caregivers, manage expenses, buy products, join community,
+search pet-friendly travel places, use PetChat AI, and save data through a backend.
+
+
+2. FRONTEND STEP BY STEP
+
+Step 1: Home page
+- File area: pawpal.html, home-page section.
+- The user first sees the PawPal landing page.
+- It introduces the pet care service and gives buttons to start using the app.
+- When the user clicks Get Started, the page moves to the login screen.
+
+Step 2: Login page
+- Page id: login-page.
+- The user enters email ID and password.
+- The login page checks that the email format is valid.
+- The password must contain a capital letter, small letter, number, and special character.
+- If details are wrong, error messages are shown.
+- If details are correct, the user moves to the pet details page.
+
+Step 3: New user register page
+- Page id: register-page.
+- The login page has Register New User.
+- When the user clicks it, PawPal opens a separate register page.
+- The user enters mail ID, password, and confirm password.
+- If password and confirm password do not match, the website shows an error.
+- After successful registration, the user is taken back to the login page.
+
+Step 4: Doctor login page
+- Page id: doctor-login-page.
+- Doctors can select their name, enter phone number, clinic email, and password.
+- The page validates phone, email, and password.
+- After valid doctor login, the doctor portal opens.
+
+Step 5: Pet details entering page
+- Page id: onboarding-page.
+- The user enters pet type, breed, name, age, weight, licence number, location, and health concern.
+- Pet type changes can suggest a breed automatically.
+- After saving pet details, PawPal calculates BMI and opens the dashboard.
+
+Step 6: Dashboard page
+- Page id: dashboard-page.
+- Shows pet image, pet name, breed, age, weight, licence, health concern, BMI, vaccine details, appointment data, expenses, and quick actions.
+- Sidebar/menu links open health, activity, products, caregivers, community, adoption, travel, doctors, and other pages.
+
+Step 7: Health tracker
+- Page id: health-page.
+- Shows BMI and health advice.
+- Shows vaccine list and medicine list.
+- User can add a vaccine.
+- User can add medicine.
+- User can save prescription notes.
+- Calendar can be used for appointment reminder style information.
+- Pet location map is shown using Google Maps style map links.
+
+Step 8: Activity log
+- Page id: activity-page.
+- User enters activity name and minutes.
+- Example: Evening Walk, 30 mins.
+- The new activity is added to the activity history list.
+
+Step 9: Training page
+- Page id: training-page.
+- Shows training tips based on pet type.
+- Includes pet behavior and care guidance.
+
+Step 10: Products page
+- Page id: products-page.
+- Shows pet products with price.
+- When the user places an order, the product is added to expenses.
+- The order is also sent to the backend orders API.
+
+Step 11: Expense tracker
+- Page id: expenses-page.
+- User adds expense title and amount.
+- PawPal lists all expenses.
+- It calculates and displays total monthly/pet expense.
+
+Step 12: Caregivers page
+- Page id: caregivers-page.
+- User can search caregivers by location and service.
+- Services include walking, grooming, boarding, sitting, and care support.
+- User can view caregiver profile.
+- User can book/hire a caregiver.
+- Caregiver booking details are sent to the backend.
+
+Step 13: Community page
+- Page id: community-page.
+- User can create a pet community post.
+- Users can view posts with images.
+- Like, comment, and share actions are available.
+- Comments can be opened and added.
+
+Step 14: Adoption page
+- Page id: adoption-page.
+- Shows adoption pet cards.
+- User can choose a pet and request a meet.
+- Meet request details are sent to the backend.
+
+Step 15: Travel page
+- Page id: travel-page.
+- User searches pet-friendly places by city and type.
+- Types include hotels, restaurants, parks, and pet-friendly places.
+- Hotel booking is available.
+- Map/directions are available for travel results.
+- Hotel booking details can be saved to backend bookings.
+
+Step 16: Doctor appointment page
+- Page id: doctors-page.
+- Shows veterinary doctors with profile details.
+- User can view doctor details.
+- User can book online or offline appointments.
+- Appointment bookings are saved to backend bookings.
+- Video/call consultation options are available in the interface.
+
+Step 17: Doctor portal
+- Page id: doctor-portal-page.
+- Shows doctor profile and patient queue.
+- Doctor can view pet 360 information.
+- Doctor can save notes and start patient call/video style actions.
+
+Step 18: PetChat AI
+- Chat window id: chat-window.
+- User can ask about diet, symptoms, medicine, vaccine, training, travel, and skin care.
+- PawPal generates helpful pet-care guidance on the frontend.
+
+Step 19: Reminders and notifications
+- PawPal stores reminder data.
+- The frontend can schedule reminder-style notifications.
+- It checks reminder time and can show notification messages.
+
+Step 20: Payment and booking flow
+- PawPal includes payment gateway style UI.
+- It supports booking payment records and bill display.
+- Payment information is saved in frontend state and can sync to backend.
+
+
+3. BACKEND STEP BY STEP
+
+Step 1: Start the backend
+- Open terminal in /Users/surya/Documents/pawpal.
+- Run:
+  node backend/server.js
+- The backend starts a local server and serves the website files.
+
+Step 2: Open the website through backend
+- Open:
+  http://127.0.0.1:8787/pawpal.html
+- This is better than opening the file directly when backend sync is needed.
+
+Step 3: Backend database file
+- Backend stores data in:
+  backend/data/pawpal-db.json
+- This is a JSON file database for local project use.
+- It stores owners, pet data, bookings, caregiver bookings, orders, reminders, expenses, activities, vaccines, medicines, and related app state.
+
+Step 4: Health API
+- GET /api/health
+- Used to check whether backend is running.
+
+Step 5: State API
+- GET /api/state
+- Frontend reads saved PawPal data from backend.
+
+- PUT /api/state
+- Frontend sends the full current PawPal state to backend.
+- This keeps dashboard, pet profile, expenses, activities, medicines, vaccines, bookings, and other data saved.
+
+Step 6: Login API
+- POST /api/login
+- Called when user login or registration happens.
+- Saves owner login/registration information.
+
+Step 7: Booking API
+- POST /api/bookings
+- Used for doctor appointments and hotel/travel bookings.
+
+Step 8: Reminder API
+- POST /api/reminders
+- Saves reminder data.
+
+Step 9: Adoption API
+- POST /api/adoption-meetings
+- Saves adoption meet requests.
+
+Step 10: Caregiver API
+- POST /api/caregiver-bookings
+- Saves caregiver booking data.
+
+- POST /api/caregiver-hires
+- Saves caregiver hire data.
+
+Step 11: Orders API
+- POST /api/orders
+- Saves product orders.
+
+Step 12: Map APIs
+- GET /api/maps/resolve
+- Helps create map links for locations.
+
+- GET /api/maps/embed
+- Helps show embedded map previews in the frontend.
+
+
+4. HOW FRONTEND AND BACKEND WORK TOGETHER
+
+Step 1: User opens PawPal.
+Step 2: Frontend loads app state from local storage and backend.
+Step 3: User logs in or registers.
+Step 4: Frontend validates the form.
+Step 5: Frontend sends login/registration data to /api/login.
+Step 6: User enters pet details.
+Step 7: Frontend calculates BMI and shows dashboard.
+Step 8: Whenever user adds vaccines, medicines, expenses, activities, orders, bookings, caregiver booking, or adoption meet request, the frontend updates app state.
+Step 9: Frontend calls backend APIs to save important records.
+Step 10: Backend writes data into pawpal-db.json.
+Step 11: When website is opened again, saved state can be loaded back.
+
+
+5. IMPORTANT FEATURE FLOW FOR TESTING
+
+End-to-end test flow:
+1. Open PawPal website.
+2. Click Get Started.
+3. Open Register New User.
+4. Enter mail ID, password, confirm password.
+5. Click Register.
+6. Confirm it returns to login page.
+7. Login with valid email and password.
+8. Enter pet details.
+9. Confirm dashboard opens.
+10. Add vaccine.
+11. Add medicine.
+12. Save prescription.
+13. Add activity.
+14. Add expense.
+15. Add community post.
+16. Search travel place.
+17. Book hotel or view travel details.
+18. Open doctor page.
+19. Book appointment.
+20. Open caregiver page.
+21. Book caregiver.
+22. Open products page.
+23. Place product order.
+24. Open PetChat and send a message.
+25. Confirm backend data is saved in pawpal-db.json.
+
+
+6. SIMPLE FILE STRUCTURE
+
+pawpal.html
+- Main frontend webpage.
+- Contains HTML, CSS, JavaScript, forms, pages, app state, validations, and UI features.
+
+backend/server.js
+- Main backend server.
+- Serves files and handles APIs.
+
+backend/data/pawpal-db.json
+- Local JSON database.
+
+dist/
+- Build/output web files when available.
+
+android/
+- Android app project.
+- Not required for this webpage explanation file.
+
+selenium-e2e-node/
+- Selenium testing folder for web end-to-end tests.
+
+appium-tests/
+- Appium testing folder for Android mobile app tests.
+
+
+7. SHORT SUMMARY
+
+Frontend means what the user sees and clicks in pawpal.html.
+Backend means server.js and pawpal-db.json that save and return data.
+PawPal uses frontend JavaScript for page navigation, validation, calculations, UI updates, and chat replies.
+PawPal uses backend APIs for saving login, state, bookings, reminders, adoption meetings, caregiver bookings, and product orders.
+
+This file explains the complete PawPal webpage flow in a step-by-step method for both frontend and backend.

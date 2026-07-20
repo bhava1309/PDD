@@ -1,14 +1,14 @@
 {
   "name": "PawPal - Complete Pet Care",
   "short_name": "PawPal",
-  "description": "Pet profiles, health tracking, vet appointments, caregivers, community, adoption, travel, expenses, and PetChat AI.",
+  "description": "Complete pet care for health tracking, appointments, community, adoption, travel, expenses, and PetChat AI.",
   "id": "/index.html",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui"],
   "orientation": "portrait",
-  "background_color": "#F8F9FA",
+  "background_color": "#F5F6FB",
   "theme_color": "#6C63FF",
   "categories": ["lifestyle", "health", "productivity"],
   "icons": [

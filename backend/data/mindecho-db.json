@@ -1,0 +1,240 @@
+{
+  "owner": {
+    "name": "Guest",
+    "phone": "",
+    "email": ""
+  },
+  "pet": {
+    "type": "Dog",
+    "breed": "Labrador Retriever",
+    "name": "Bruno",
+    "age": 3,
+    "weight": 18,
+    "licence": "CHN-PET-2026-1024",
+    "location": "Chennai, Tamil Nadu",
+    "concern": "Weight control"
+  },
+  "loggedIn": false,
+  "profileComplete": true,
+  "vaccines": [
+    "Rabies - due 18 Jun 2026",
+    "DHPP - due 24 Jul 2026",
+    "Leptospirosis - due 15 Aug 2026"
+  ],
+  "medicines": [
+    "Omega-3 syrup - 5ml after breakfast",
+    "Flea and tick tablet - monthly"
+  ],
+  "prescription": "",
+  "expenses": [
+    {
+      "title": "Vet visit",
+      "amount": 1200
+    },
+    {
+      "title": "Dog food",
+      "amount": 2450
+    },
+    {
+      "title": "Toy order",
+      "amount": 499
+    }
+  ],
+  "activities": [
+    "Today - Morning walk - 35 mins",
+    "Yesterday - Fetch play - 25 mins",
+    "18 May - Grooming - 40 mins"
+  ],
+  "appointment": "",
+  "appointments": [],
+  "doctorLoggedIn": false,
+  "currentDoctor": "",
+  "posts": [
+    {
+      "user": "Anika Rao",
+      "time": "2 hours ago",
+      "text": "My Labrador finally learned stay today. Any tips for improving recall in busy parks?",
+      "img": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80",
+      "comments": [
+        "Use a long leash first.",
+        "High-value treats helped my dog."
+      ]
+    },
+    {
+      "user": "Rahul Menon",
+      "time": "5 hours ago",
+      "text": "Found a pet-friendly cafe in Bengaluru with a separate dog menu. PawPal travel helped a lot.",
+      "img": "https://images.unsplash.com/photo-1601758003122-53c40e686a19?auto=format&fit=crop&w=900&q=80",
+      "comments": [
+        "Please share location.",
+        "Looks lovely."
+      ]
+    },
+    {
+      "user": "Meera Shah",
+      "time": "Yesterday",
+      "text": "My cat hates medicine time. What is the easiest way to give syrup?",
+      "img": "https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=900&q=80",
+      "comments": [
+        "Try a syringe from the side of mouth.",
+        "Ask vet if it can mix with food."
+      ]
+    },
+    {
+      "user": "Vikram S",
+      "time": "2 days ago",
+      "text": "Booked an online vet slot for my beagle through PawPal. The prescription section made the follow-up easy.",
+      "img": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80",
+      "comments": [
+        "That is useful.",
+        "Which doctor did you choose?"
+      ]
+    },
+    {
+      "user": "Nisha Kapoor",
+      "time": "3 days ago",
+      "text": "Looking for rabbit-safe play products in Pune. Please suggest toys that do not have sharp plastic edges.",
+      "img": "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=900&q=80",
+      "comments": [
+        "Try hay tunnels.",
+        "Puzzle mats work well."
+      ]
+    }
+  ],
+  "teachers": [
+    {
+      "id": "ananya-iyer",
+      "name": "Dr. Ananya Iyer",
+      "qualification": "Ph.D. Computer Science",
+      "institute": "Anna University, Chennai",
+      "experienceYears": 12,
+      "classLevel": "Engineering 2nd Year",
+      "subject": "Data Structures",
+      "photo": "https://source.unsplash.com/700x500/?south-indian,woman,professor,portrait&sig=11",
+      "slots": [
+        "Mon 7:00 PM",
+        "Tue 6:00 PM",
+        "Thu 8:00 PM",
+        "Sat 11:00 AM"
+      ]
+    },
+    {
+      "id": "aravind-krishnan",
+      "name": "Prof. Aravind Krishnan",
+      "qualification": "M.Tech Mechanical Engineering",
+      "institute": "NIT Calicut",
+      "experienceYears": 10,
+      "classLevel": "Engineering 1st Year",
+      "subject": "Thermodynamics",
+      "photo": "https://source.unsplash.com/700x500/?south-indian,man,teacher,portrait&sig=12",
+      "slots": [
+        "Mon 8:00 PM",
+        "Wed 7:30 PM",
+        "Fri 6:30 PM",
+        "Sun 10:00 AM"
+      ]
+    },
+    {
+      "id": "meera-subramanian",
+      "name": "Meera Subramanian",
+      "qualification": "M.E. Electronics and Communication",
+      "institute": "College of Engineering Guindy",
+      "experienceYears": 8,
+      "classLevel": "Engineering 3rd Year",
+      "subject": "Signals & Systems",
+      "photo": "https://source.unsplash.com/700x500/?south-indian,woman,faculty,portrait&sig=13",
+      "slots": [
+        "Tue 5:30 PM",
+        "Thu 7:00 PM",
+        "Sat 4:00 PM",
+        "Sun 12:00 PM"
+      ]
+    },
+    {
+      "id": "sanjay-nair",
+      "name": "Sanjay Nair",
+      "qualification": "MCA",
+      "institute": "University of Kerala",
+      "experienceYears": 9,
+      "classLevel": "Engineering 2nd Year",
+      "subject": "DBMS",
+      "photo": "https://source.unsplash.com/700x500/?kerala,teacher,man,portrait&sig=14",
+      "slots": [
+        "Mon 6:00 PM",
+        "Wed 8:00 PM",
+        "Fri 7:00 PM",
+        "Sat 9:00 AM"
+      ]
+    },
+    {
+      "id": "revathi-raman",
+      "name": "Revathi Raman",
+      "qualification": "M.Sc Mathematics",
+      "institute": "Bharathiar University, Coimbatore",
+      "experienceYears": 7,
+      "classLevel": "Class 12",
+      "subject": "Engineering Mathematics",
+      "photo": "https://source.unsplash.com/700x500/?tamil,woman,teacher,portrait&sig=15",
+      "slots": [
+        "Tue 8:00 PM",
+        "Wed 6:00 PM",
+        "Fri 5:30 PM",
+        "Sun 5:00 PM"
+      ]
+    },
+    {
+      "id": "farhan-ahmed",
+      "name": "Farhan Ahmed",
+      "qualification": "M.Tech Information Technology",
+      "institute": "IIIT Hyderabad",
+      "experienceYears": 11,
+      "classLevel": "Engineering 3rd Year",
+      "subject": "Operating Systems",
+      "photo": "https://source.unsplash.com/700x500/?hyderabad,faculty,man,portrait&sig=16",
+      "slots": [
+        "Mon 9:00 PM",
+        "Thu 6:00 PM",
+        "Sat 6:30 PM",
+        "Sun 9:30 AM"
+      ]
+    },
+    {
+      "id": "kavya-reddy",
+      "name": "Kavya Reddy",
+      "qualification": "M.Sc Physics, B.Ed",
+      "institute": "Osmania University, Hyderabad",
+      "experienceYears": 6,
+      "classLevel": "Class 11",
+      "subject": "Physics",
+      "photo": "https://source.unsplash.com/700x500/?south-indian,woman,physics,teacher,portrait&sig=17",
+      "slots": [
+        "Mon 5:00 PM",
+        "Wed 5:30 PM",
+        "Fri 8:00 PM",
+        "Sat 3:00 PM"
+      ]
+    },
+    {
+      "id": "pranav-hegde",
+      "name": "Pranav Hegde",
+      "qualification": "M.Sc Chemistry, B.Ed",
+      "institute": "Mangalore University",
+      "experienceYears": 5,
+      "classLevel": "Class 10",
+      "subject": "Chemistry",
+      "photo": "https://source.unsplash.com/700x500/?karnataka,indian,teacher,man,portrait&sig=18",
+      "slots": [
+        "Tue 4:30 PM",
+        "Thu 5:30 PM",
+        "Sat 10:00 AM",
+        "Sun 4:00 PM"
+      ]
+    }
+  ],
+  "bookings": [],
+  "classBookings": [],
+  "reminders": [],
+  "adoptionMeetings": [],
+  "caregiverHires": [],
+  "orders": []
+}

@@ -1,0 +1,6 @@
+node_modules/
+screenshots/
+reports/test_results.json
+reports/PawPal_E2E_Report_*.xlsx
+.DS_Store
+*.log

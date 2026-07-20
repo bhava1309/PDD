@@ -1,0 +1,3394 @@
+[
+  {
+    "suite": "Registration Flow",
+    "test": "New User button opens a separate register page",
+    "status": "PASS",
+    "durationMs": 102,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:08.904Z"
+  },
+  {
+    "suite": "Registration Flow",
+    "test": "Register button returns to login page after valid registration",
+    "status": "PASS",
+    "durationMs": 369,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.281Z"
+  },
+  {
+    "suite": "Login Flow",
+    "test": "Login opens pet details page after registered credentials are shown",
+    "status": "PASS",
+    "durationMs": 36,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.317Z"
+  },
+  {
+    "suite": "Pet Details Flow",
+    "test": "Pet details save opens dashboard",
+    "status": "PASS",
+    "durationMs": 74,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.391Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-001 home page activates without error",
+    "status": "PASS",
+    "durationMs": 9,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.400Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-002 login page activates without error",
+    "status": "PASS",
+    "durationMs": 9,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.409Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-003 register page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.415Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-004 onboarding page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.422Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-005 dashboard page activates without error",
+    "status": "PASS",
+    "durationMs": 9,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.431Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-006 health page activates without error",
+    "status": "PASS",
+    "durationMs": 25,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.456Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-007 activity page activates without error",
+    "status": "PASS",
+    "durationMs": 13,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.469Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-008 training page activates without error",
+    "status": "PASS",
+    "durationMs": 12,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.481Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-009 products page activates without error",
+    "status": "PASS",
+    "durationMs": 31,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.512Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-010 expenses page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.520Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-011 caregivers page activates without error",
+    "status": "PASS",
+    "durationMs": 12,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.532Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-012 community page activates without error",
+    "status": "PASS",
+    "durationMs": 10,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.542Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-013 adoption page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.549Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-014 travel page activates without error",
+    "status": "PASS",
+    "durationMs": 15,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.564Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-015 doctors page activates without error",
+    "status": "PASS",
+    "durationMs": 66,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.630Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-016 home page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.637Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-017 login page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.645Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-018 register page activates without error",
+    "status": "PASS",
+    "durationMs": 5,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.650Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-019 onboarding page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.657Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-020 dashboard page activates without error",
+    "status": "PASS",
+    "durationMs": 5,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.662Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-021 health page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.669Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-022 activity page activates without error",
+    "status": "PASS",
+    "durationMs": 11,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.680Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-023 training page activates without error",
+    "status": "PASS",
+    "durationMs": 5,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.685Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-024 products page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.693Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-025 expenses page activates without error",
+    "status": "PASS",
+    "durationMs": 5,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.698Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-026 caregivers page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.704Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-027 community page activates without error",
+    "status": "PASS",
+    "durationMs": 15,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.719Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-028 adoption page activates without error",
+    "status": "PASS",
+    "durationMs": 33,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.752Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-029 travel page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.760Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-030 doctors page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.766Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-031 home page activates without error",
+    "status": "PASS",
+    "durationMs": 12,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.778Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-032 login page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.784Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-033 register page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.792Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-034 onboarding page activates without error",
+    "status": "PASS",
+    "durationMs": 5,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.797Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-035 dashboard page activates without error",
+    "status": "PASS",
+    "durationMs": 29,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.826Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-036 health page activates without error",
+    "status": "PASS",
+    "durationMs": 9,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.835Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-037 activity page activates without error",
+    "status": "PASS",
+    "durationMs": 13,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.848Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-038 training page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.854Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-039 products page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.861Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-040 expenses page activates without error",
+    "status": "PASS",
+    "durationMs": 5,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.866Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-041 caregivers page activates without error",
+    "status": "PASS",
+    "durationMs": 13,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.880Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-042 community page activates without error",
+    "status": "PASS",
+    "durationMs": 10,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.890Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-043 adoption page activates without error",
+    "status": "PASS",
+    "durationMs": 11,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.901Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-044 travel page activates without error",
+    "status": "PASS",
+    "durationMs": 11,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.912Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-045 doctors page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.918Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-046 home page activates without error",
+    "status": "PASS",
+    "durationMs": 10,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.928Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-047 login page activates without error",
+    "status": "PASS",
+    "durationMs": 5,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.933Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-048 register page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.940Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-049 onboarding page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.946Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-050 dashboard page activates without error",
+    "status": "PASS",
+    "durationMs": 5,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.951Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-051 health page activates without error",
+    "status": "PASS",
+    "durationMs": 11,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.962Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-052 activity page activates without error",
+    "status": "PASS",
+    "durationMs": 5,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.967Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-053 training page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.975Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-054 products page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.981Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-055 expenses page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.987Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-056 caregivers page activates without error",
+    "status": "PASS",
+    "durationMs": 10,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:09.997Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-057 community page activates without error",
+    "status": "PASS",
+    "durationMs": 5,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.002Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-058 adoption page activates without error",
+    "status": "PASS",
+    "durationMs": 9,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.011Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-059 travel page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.018Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-060 doctors page activates without error",
+    "status": "PASS",
+    "durationMs": 16,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.034Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-061 home page activates without error",
+    "status": "PASS",
+    "durationMs": 15,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.049Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-062 login page activates without error",
+    "status": "PASS",
+    "durationMs": 9,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.058Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-063 register page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.064Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-064 onboarding page activates without error",
+    "status": "PASS",
+    "durationMs": 9,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.073Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-065 dashboard page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.081Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-066 health page activates without error",
+    "status": "PASS",
+    "durationMs": 13,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.094Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-067 activity page activates without error",
+    "status": "PASS",
+    "durationMs": 34,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.128Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-068 training page activates without error",
+    "status": "PASS",
+    "durationMs": 13,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.141Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-069 products page activates without error",
+    "status": "PASS",
+    "durationMs": 19,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.160Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-070 expenses page activates without error",
+    "status": "PASS",
+    "durationMs": 20,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.180Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-071 caregivers page activates without error",
+    "status": "PASS",
+    "durationMs": 22,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.202Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-072 community page activates without error",
+    "status": "PASS",
+    "durationMs": 35,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.237Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-073 adoption page activates without error",
+    "status": "PASS",
+    "durationMs": 31,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.268Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-074 travel page activates without error",
+    "status": "PASS",
+    "durationMs": 15,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.283Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-075 doctors page activates without error",
+    "status": "PASS",
+    "durationMs": 34,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.317Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-076 home page activates without error",
+    "status": "PASS",
+    "durationMs": 29,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.346Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-077 login page activates without error",
+    "status": "PASS",
+    "durationMs": 15,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.361Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-078 register page activates without error",
+    "status": "PASS",
+    "durationMs": 54,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.416Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-079 onboarding page activates without error",
+    "status": "PASS",
+    "durationMs": 14,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.430Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-080 dashboard page activates without error",
+    "status": "PASS",
+    "durationMs": 12,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.442Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-081 health page activates without error",
+    "status": "PASS",
+    "durationMs": 20,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.462Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-082 activity page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.469Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-083 training page activates without error",
+    "status": "PASS",
+    "durationMs": 10,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.479Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-084 products page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.486Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-085 expenses page activates without error",
+    "status": "PASS",
+    "durationMs": 59,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.545Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-086 caregivers page activates without error",
+    "status": "PASS",
+    "durationMs": 42,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.587Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-087 community page activates without error",
+    "status": "PASS",
+    "durationMs": 22,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.609Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-088 adoption page activates without error",
+    "status": "PASS",
+    "durationMs": 46,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.655Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-089 travel page activates without error",
+    "status": "PASS",
+    "durationMs": 62,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.717Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-090 doctors page activates without error",
+    "status": "PASS",
+    "durationMs": 19,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.736Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-091 home page activates without error",
+    "status": "PASS",
+    "durationMs": 22,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.758Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-092 login page activates without error",
+    "status": "PASS",
+    "durationMs": 9,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.767Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-093 register page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.775Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-094 onboarding page activates without error",
+    "status": "PASS",
+    "durationMs": 15,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.790Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-095 dashboard page activates without error",
+    "status": "PASS",
+    "durationMs": 54,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.844Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-096 health page activates without error",
+    "status": "PASS",
+    "durationMs": 33,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.877Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-097 activity page activates without error",
+    "status": "PASS",
+    "durationMs": 14,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.891Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-098 training page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.899Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-099 products page activates without error",
+    "status": "PASS",
+    "durationMs": 9,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.908Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-100 expenses page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.915Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-101 caregivers page activates without error",
+    "status": "PASS",
+    "durationMs": 14,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.929Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-102 community page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.936Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-103 adoption page activates without error",
+    "status": "PASS",
+    "durationMs": 11,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.947Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-104 travel page activates without error",
+    "status": "PASS",
+    "durationMs": 11,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.958Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-105 doctors page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.966Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-106 home page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.974Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-107 login page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.981Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-108 register page activates without error",
+    "status": "PASS",
+    "durationMs": 9,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.990Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-109 onboarding page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:10.996Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-110 dashboard page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.002Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-111 health page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.008Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-112 activity page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.014Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-113 training page activates without error",
+    "status": "PASS",
+    "durationMs": 4,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.018Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-114 products page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.024Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-115 expenses page activates without error",
+    "status": "PASS",
+    "durationMs": 6,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.030Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-116 caregivers page activates without error",
+    "status": "PASS",
+    "durationMs": 13,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.043Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-117 community page activates without error",
+    "status": "PASS",
+    "durationMs": 10,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.053Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-118 adoption page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.061Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-119 travel page activates without error",
+    "status": "PASS",
+    "durationMs": 7,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.068Z"
+  },
+  {
+    "suite": "Page Navigation",
+    "test": "TC-120 doctors page activates without error",
+    "status": "PASS",
+    "durationMs": 8,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.076Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-001 Login email field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.078Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-002 Login password field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.080Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-003 Register page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.082Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-004 Register email field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.084Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-005 Register password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.085Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-006 Register confirm password exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.087Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-007 Pet type exists",
+    "status": "PASS",
+    "durationMs": 3,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.090Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-008 Pet breed exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.091Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-009 Pet name exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.093Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-010 Dashboard page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.094Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-011 Health page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.096Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-012 Community page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.097Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-013 Travel page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.099Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-014 Doctors page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.100Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-015 Login email field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.102Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-016 Login password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.103Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-017 Register page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.105Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-018 Register email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.106Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-019 Register password field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.108Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-020 Register confirm password exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.109Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-021 Pet type exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.110Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-022 Pet breed exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.111Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-023 Pet name exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.112Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-024 Dashboard page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.113Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-025 Health page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.115Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-026 Community page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.116Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-027 Travel page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.117Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-028 Doctors page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.118Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-029 Login email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.119Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-030 Login password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.120Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-031 Register page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.121Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-032 Register email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.122Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-033 Register password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.123Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-034 Register confirm password exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.124Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-035 Pet type exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.125Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-036 Pet breed exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.126Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-037 Pet name exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.127Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-038 Dashboard page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.128Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-039 Health page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.130Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-040 Community page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.132Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-041 Travel page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.133Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-042 Doctors page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.134Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-043 Login email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.135Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-044 Login password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.136Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-045 Register page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.137Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-046 Register email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.138Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-047 Register password field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.140Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-048 Register confirm password exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.141Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-049 Pet type exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.142Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-050 Pet breed exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.143Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-051 Pet name exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.144Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-052 Dashboard page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.145Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-053 Health page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.146Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-054 Community page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.147Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-055 Travel page exists",
+    "status": "PASS",
+    "durationMs": 5,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.152Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-056 Doctors page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.153Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-057 Login email field exists",
+    "status": "PASS",
+    "durationMs": 4,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.157Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-058 Login password field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.159Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-059 Register page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.161Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-060 Register email field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.163Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-061 Register password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.164Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-062 Register confirm password exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.165Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-063 Pet type exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.167Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-064 Pet breed exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.168Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-065 Pet name exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.169Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-066 Dashboard page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.170Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-067 Health page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.172Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-068 Community page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.173Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-069 Travel page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.175Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-070 Doctors page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.177Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-071 Login email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.178Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-072 Login password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.179Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-073 Register page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.181Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-074 Register email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.182Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-075 Register password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.183Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-076 Register confirm password exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.184Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-077 Pet type exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.185Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-078 Pet breed exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.186Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-079 Pet name exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.188Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-080 Dashboard page exists",
+    "status": "PASS",
+    "durationMs": 12,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.200Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-081 Health page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.201Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-082 Community page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.203Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-083 Travel page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.205Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-084 Doctors page exists",
+    "status": "PASS",
+    "durationMs": 3,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.208Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-085 Login email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.209Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-086 Login password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.210Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-087 Register page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.212Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-088 Register email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.213Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-089 Register password field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.215Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-090 Register confirm password exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.216Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-091 Pet type exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.217Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-092 Pet breed exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.218Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-093 Pet name exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.219Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-094 Dashboard page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.220Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-095 Health page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.222Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-096 Community page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.223Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-097 Travel page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.224Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-098 Doctors page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.226Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-099 Login email field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.228Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-100 Login password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.229Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-101 Register page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.230Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-102 Register email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.231Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-103 Register password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.232Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-104 Register confirm password exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.234Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-105 Pet type exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.235Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-106 Pet breed exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.236Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-107 Pet name exists",
+    "status": "PASS",
+    "durationMs": 3,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.239Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-108 Dashboard page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.241Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-109 Health page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.243Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-110 Community page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.244Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-111 Travel page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.245Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-112 Doctors page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.246Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-113 Login email field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.248Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-114 Login password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.249Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-115 Register page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.250Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-116 Register email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.251Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-117 Register password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.252Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-118 Register confirm password exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.253Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-119 Pet type exists",
+    "status": "PASS",
+    "durationMs": 3,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.256Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-120 Pet breed exists",
+    "status": "PASS",
+    "durationMs": 3,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.259Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-121 Pet name exists",
+    "status": "PASS",
+    "durationMs": 3,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.262Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-122 Dashboard page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.264Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-123 Health page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.265Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-124 Community page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.266Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-125 Travel page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.267Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-126 Doctors page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.268Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-127 Login email field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.270Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-128 Login password field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.271Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-129 Register page exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.273Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-130 Register email field exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.274Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-131 Register password field exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.276Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-132 Register confirm password exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.277Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-133 Pet type exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.278Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-134 Pet breed exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.279Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-135 Pet name exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.280Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-136 Dashboard page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.281Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-137 Health page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.282Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-138 Community page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.283Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-139 Travel page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.284Z"
+  },
+  {
+    "suite": "DOM Contract",
+    "test": "TC-140 Doctors page exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.285Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-001 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.286Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-002 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.288Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-003 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.290Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-004 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.292Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-005 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.294Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-006 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.295Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-007 Login message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.296Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-008 Register message exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.298Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-009 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.299Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-010 Toast exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.300Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-011 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.301Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-012 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.302Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-013 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.304Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-014 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.306Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-015 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.307Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-016 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.308Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-017 Login message exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.310Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-018 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.311Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-019 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.312Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-020 Toast exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.313Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-021 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.314Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-022 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.315Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-023 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.316Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-024 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.317Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-025 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.318Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-026 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.318Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-027 Login message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.319Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-028 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.320Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-029 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.322Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-030 Toast exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.323Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-031 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.324Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-032 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.325Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-033 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.326Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-034 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.328Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-035 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.329Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-036 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.331Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-037 Login message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.332Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-038 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.333Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-039 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.334Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-040 Toast exists",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.334Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-041 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.335Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-042 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.336Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-043 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.338Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-044 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 3,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.341Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-045 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.342Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-046 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.343Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-047 Login message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.344Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-048 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.345Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-049 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.346Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-050 Toast exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.347Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-051 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.348Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-052 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.349Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-053 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.349Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-054 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.350Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-055 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.351Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-056 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.352Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-057 Login message exists",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.352Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-058 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.353Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-059 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.354Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-060 Toast exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.356Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-061 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.356Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-062 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.357Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-063 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.358Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-064 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.359Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-065 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.360Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-066 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.361Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-067 Login message exists",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.361Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-068 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.362Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-069 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.363Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-070 Toast exists",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.365Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-071 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.366Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-072 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.368Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-073 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.370Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-074 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.372Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-075 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.373Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-076 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.374Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-077 Login message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.375Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-078 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.376Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-079 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.377Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-080 Toast exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.378Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-081 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.378Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-082 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.379Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-083 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.380Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-084 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.381Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-085 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.382Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-086 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.383Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-087 Login message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.384Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-088 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.385Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-089 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.385Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-090 Toast exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.386Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-091 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.387Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-092 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.388Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-093 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.389Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-094 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.390Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-095 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.390Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-096 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.391Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-097 Login message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.392Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-098 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.393Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-099 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.394Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-100 Toast exists",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.394Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-101 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.395Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-102 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.396Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-103 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.397Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-104 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.398Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-105 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.399Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-106 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.399Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-107 Login message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.400Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-108 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.401Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-109 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.402Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-110 Toast exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.403Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-111 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.403Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-112 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.405Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-113 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.406Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-114 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.406Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-115 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.407Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-116 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.408Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-117 Login message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.409Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-118 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.410Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-119 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.411Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-120 Toast exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.412Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-121 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.413Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-122 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.414Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-123 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.414Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-124 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.415Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-125 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.416Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-126 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.417Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-127 Login message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.418Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-128 Register message exists",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.418Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-129 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.419Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-130 Toast exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.420Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-131 App title is PawPal",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.421Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-132 Register page is separate from login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.422Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-133 Register card is inside register page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.423Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-134 Register card is not inside login page",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.424Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-135 New user button points to register function",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.425Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-136 Register button points to registerNewUser",
+    "status": "PASS",
+    "durationMs": 0,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.425Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-137 Login message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.426Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-138 Register message exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.427Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-139 Bottom nav exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.428Z"
+  },
+  {
+    "suite": "Business Rules",
+    "test": "TC-140 Toast exists",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.429Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-001 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 3,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.432Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-002 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.434Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-003 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.435Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-004 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.437Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-005 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.439Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-006 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.441Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-007 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.442Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-008 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.443Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-009 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.445Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-010 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.446Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-011 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.447Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-012 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.449Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-013 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.450Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-014 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.451Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-015 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.453Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-016 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.454Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-017 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.456Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-018 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.457Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-019 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 2,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.459Z"
+  },
+  {
+    "suite": "Backend And Persistence",
+    "test": "TC-020 backend health and local persistence check",
+    "status": "PASS",
+    "durationMs": 1,
+    "notes": "Passed",
+    "timestamp": "2026-06-23T03:33:11.460Z"
+  }
+]

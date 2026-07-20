@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 900" role="img" aria-label="PawPal UPI QR payment code">
+  <rect width="860" height="900" fill="#171d1f"/>
+  <rect x="82" y="42" width="696" height="696" fill="#101416"/>
+  <g fill="#f2f2f2">
+    <path d="M92 52h144v144H92zm552 0h144v144H644zM92 594h144v144H92z"/>
+    <path d="M120 80h88v88h-88zm552 0h88v88h-88zM120 622h88v88h-88z"/>
+  </g>
+  <g fill="#101416">
+    <path d="M142 102h44v44h-44zm552 0h44v44h-44zM142 644h44v44h-44z"/>
+  </g>
+  <g fill="#f2f2f2">
+    <path d="M268 52h22v22h-22zm43 0h22v44h-22zm84 0h84v42h-84zm126 0h42v42h-42zm96 0h22v66h-22zM268 96h42v22h-42zm64 0h44v64h-44zm84 22h84v22h-84zm106-22h22v44h-22zm44 44h84v22h-84zm-298 42h22v64h-22zm64-22h22v44h-22zm44 42h64v22h-64zm106-20h22v86h-22zm42 0h88v44h-88zm128 20h22v44h-22zm64 22h44v22h-44zM92 216h22v22H92zm64 0h42v22h-42zm84 0h22v84h-22zm64 0h86v44h-86zm128 0h22v64h-22zm44 0h22v22h-22zm64 0h42v44h-42zm106 0h42v22h-42zm64 0h22v44h-22zm64 42h22v44h-22zM114 258h42v64h-42zm84 42h44v22h-44zm84-22h44v44h-44zm84 0h22v88h-22zm44 22h66v44h-66zm110-22h22v44h-22zm44 22h66v22h-66zm88 0h22v66h-22zm44 44h88v22h-88zM92 344h66v22H92zm88 0h22v66h-22zm44 22h66v22h-66zm88-22h42v66h-42zm86 22h22v44h-22zm44 0h66v22h-66zm88-22h84v44h-84zm106 44h44v22h-44zm66-22h42v66h-42zm64 44h22v44h-22zM92 432h22v22H92zm44 0h42v44h-42zm64 22h44v22h-44zm86-22h22v86h-22zm44 0h64v22h-64zm86 44h42v22h-42zm64-44h22v86h-22zm44 0h66v22h-66zm88 44h64v22h-64zm86-44h22v44h-22zm44 0h44v22h-44zM92 498h66v22H92zm88 0h44v66h-44zm66 44h42v22h-42zm64-44h22v44h-22zm44 22h66v22h-66zm88-22h44v66h-44zm66 44h86v22h-86zm108-44h22v66h-22zm44 0h64v22h-64zm86 44h42v22h-42zM268 594h42v22h-42zm64 0h84v42h-84zm106 0h22v44h-22zm44 0h86v22h-86zm108 0h22v66h-22zm44 0h44v22h-44zm66 0h88v22h-88zM268 660h22v66h-22zm44-22h44v22h-44zm66 44h66v22h-66zm88-44h42v66h-42zm64 22h22v66h-22zm44-22h66v44h-66zm88 66h22v34h-22zm44-44h44v22h-44zm66 44h16v34h-16z"/>
+  </g>
+  <circle cx="430" cy="390" r="88" fill="#fff" stroke="#d9d9d9" stroke-width="5"/>
+  <g transform="translate(382 342)">
+    <rect x="0" y="30" width="42" height="72" rx="16" fill="#4285f4" transform="rotate(22 21 66)"/>
+    <rect x="31" y="1" width="42" height="101" rx="17" fill="#34a853" transform="rotate(40 52 52)"/>
+    <rect x="61" y="26" width="42" height="80" rx="17" fill="#fbbc04" transform="rotate(40 82 66)"/>
+    <rect x="84" y="22" width="42" height="76" rx="17" fill="#ea4335" transform="rotate(40 105 60)"/>
+  </g>
+  <text x="430" y="822" fill="#f4f4f4" font-family="Arial, Helvetica, sans-serif" font-size="42" text-anchor="middle" font-weight="800">Scan to pay with any UPI app</text>
+</svg>

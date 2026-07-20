@@ -177,9 +177,6 @@
     }
     .field-error { color: var(--secondary); font-size: 0.82rem; font-weight: 800; margin-top: 6px; display: none; }
     .field-error.show { display: block; }
-    .auth-switch { margin-top: 14px; display: grid; gap: 8px; justify-items: center; text-align: center; }
-    .auth-link { border: none; background: transparent; color: var(--primary); font-weight: 900; padding: 4px; }
-    .is-hidden { display: none !important; }
 
     .dashboard {
       display: grid;
@@ -552,29 +549,6 @@
           </div>
           <p class="muted" id="login-message" style="min-height:24px;margin-bottom:10px"></p>
           <button class="btn btn-primary" id="continue-pet-details" type="button" style="width:100%" onclick="openPetDetails(event)">Continue to Pet Details</button>
-          <div class="auth-switch">
-            <span class="muted">New user?</span>
-            <button class="auth-link" type="button" onclick="showRegisterForm(event)">Register New User</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container page" id="register-page">
-      <div class="form-shell">
-        <div class="section-title"><h2>New User Register</h2><p>Register your mail ID and password, then login to continue.</p></div>
-        <div class="form-card" id="register-card">
-          <div class="form-grid">
-            <div class="form-group"><label>Mail ID</label><input class="form-control" id="register-owner-email" type="email" placeholder="yourname@gmail.com"><span class="field-error" id="register-owner-email-error">Please enter a valid mail ID.</span></div>
-            <div class="form-group"><label>Password</label><input class="form-control" id="register-owner-password" type="password" placeholder="Minimum 6 characters"><span class="field-error" id="register-owner-password-error">Password must be at least 6 characters.</span></div>
-            <div class="form-group"><label>Confirm Password</label><input class="form-control" id="register-confirm-password" type="password" placeholder="Re-enter password"><span class="field-error" id="register-confirm-password-error">Passwords must match.</span></div>
-          </div>
-          <p class="muted" id="register-message" style="min-height:24px;margin-bottom:10px"></p>
-          <button class="btn btn-primary" type="button" style="width:100%" onclick="registerNewUser(event)">Register</button>
-          <div class="auth-switch">
-            <span class="muted">Already registered?</span>
-            <button class="auth-link" type="button" onclick="showLoginForm(event)">Back to Login</button>
-          </div>
         </div>
       </div>
     </section>
@@ -886,22 +860,21 @@
       table: 'pawpal_state',
       rowId: 'shared'
     };
-    const useSupabase = false;
+    const useSupabase = Boolean(supabaseConfig.url && supabaseConfig.key);
     const razorpayConfig = {
       keyId: 'rzp_test_REPLACE_WITH_YOUR_KEY',
       merchantName: 'PawPal',
       description: 'PawPal pet care payment'
     };
 
-    const apiBase = location.protocol === 'file:' ? 'http://127.0.0.1:8787' : '';
-    const useBackend = true;
+    localStorage.removeItem('pawpal.apiBase');
+    const apiBase = '';
     let backendSyncTimer = null;
     let realtimeTimer = null;
     let backendSyncInFlight = false;
     let localDirty = false;
     let lastBackendUpdatedAt = '';
     let cloudDatabaseReady = true;
-    let backendReady = true;
     let cloudWarningShown = false;
 
     function currentState() {
@@ -987,26 +960,6 @@
     }
 
     async function apiRequest(path, options = {}) {
-      if(useBackend) {
-        try {
-          const method = (options.method || 'GET').toUpperCase();
-          const response = await fetch(`${apiBase}${path}`, {
-            method,
-            headers: {
-              Accept: 'application/json',
-              'Content-Type': 'application/json',
-              ...(options.headers || {})
-            },
-            body: options.body
-          });
-          if(!response.ok) throw new Error(`Backend returned ${response.status}`);
-          backendReady = true;
-          return response.status === 204 ? null : await response.json();
-        } catch(error) {
-          backendReady = false;
-          return null;
-        }
-      }
       if(path === '/api/state' && useSupabase && cloudDatabaseReady) {
         try {
           return (options.method || 'GET').toUpperCase() === 'GET' ? await readCloudState() : await writeCloudState();
@@ -1023,7 +976,7 @@
     }
 
     function syncBackendSoon() {
-      if(!useBackend && (!useSupabase || !cloudDatabaseReady)) return;
+      if(!useSupabase || !cloudDatabaseReady) return;
       localDirty = true;
       clearTimeout(backendSyncTimer);
       backendSyncTimer = setTimeout(async () => {
@@ -1087,7 +1040,7 @@
     }
 
     async function pullBackendState() {
-      if((!useBackend && (!useSupabase || !cloudDatabaseReady)) || localDirty || backendSyncInFlight) return;
+      if(!useSupabase || !cloudDatabaseReady || localDirty || backendSyncInFlight) return;
       const state = await apiRequest('/api/state');
       if(!state) return;
       if(state.updatedAt && state.updatedAt === lastBackendUpdatedAt) return;
@@ -1098,12 +1051,7 @@
     }
 
     function logBackend(path, payload) {
-      if(!useBackend || !backendReady) return;
-      fetch(`${apiBase}${path}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload || {})
-      }).catch(() => {});
+      return;
     }
 
     function saveBackendUrl() {
@@ -1160,12 +1108,12 @@
       const password = document.getElementById('owner-password')?.value || '';
       const nameOk = name.length >= 2;
       const phoneOk = /^\d{10}$/.test(phone);
-      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-      const passwordOk = password.length >= 6;
+      const emailOk = /^[a-z0-9._%+-]+@gmail\.com$/.test(email);
+      const passwordOk = /[A-Z]/.test(password) && /\d/.test(password) && /[^A-Za-z0-9]/.test(password);
       markField('owner-name', nameOk, 'Please enter your name.');
       markField('owner-phone', phoneOk, 'Phone number must contain exactly 10 numbers.');
-      markField('owner-email', emailOk, 'Please enter a valid email address.');
-      markField('owner-password', passwordOk, 'Password must be at least 6 characters.');
+      markField('owner-email', emailOk, 'Email must be a valid @gmail.com address.');
+      markField('owner-password', passwordOk, 'Password needs 1 capital letter, 1 number, and 1 special character.');
       const loginMessage = document.getElementById('login-message');
       if(loginMessage) {
         loginMessage.textContent = nameOk && phoneOk && emailOk && passwordOk ? '' : 'Please correct the highlighted details before continuing.';
@@ -1182,12 +1130,12 @@
       const password = document.getElementById('doctor-login-password')?.value || '';
       const nameOk = doctorName.length >= 2;
       const phoneOk = /^\d{10}$/.test(phone);
-      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-      const passwordOk = password.length >= 6;
+      const emailOk = /^[a-z0-9._%+-]+@gmail\.com$/.test(email);
+      const passwordOk = /[A-Z]/.test(password) && /\d/.test(password) && /[^A-Za-z0-9]/.test(password);
       markField('doctor-login-name', nameOk, 'Please select doctor name.');
       markField('doctor-login-phone', phoneOk, 'Phone number must contain exactly 10 numbers.');
-      markField('doctor-login-email', emailOk, 'Please enter a valid email address.');
-      markField('doctor-login-password', passwordOk, 'Password must be at least 6 characters.');
+      markField('doctor-login-email', emailOk, 'Email must be a valid @gmail.com address.');
+      markField('doctor-login-password', passwordOk, 'Password needs 1 capital letter, 1 number, and 1 special character.');
       const loginMessage = document.getElementById('doctor-login-message');
       if(loginMessage) {
         loginMessage.textContent = nameOk && phoneOk && emailOk && passwordOk ? '' : 'Please correct the highlighted doctor login details.';
@@ -1229,61 +1177,6 @@
 
     function openPetDetails(event) {
       saveLogin(event);
-    }
-
-    function showRegisterForm(event) {
-      if(event) event.preventDefault();
-      document.getElementById('register-owner-email').value = val('owner-email');
-      document.getElementById('register-owner-password').value = document.getElementById('owner-password')?.value || '';
-      activatePage('register');
-    }
-
-    function showLoginForm(event) {
-      if(event) event.preventDefault();
-      document.getElementById('patient-login-subtitle').textContent = 'Enter your details to continue to pet setup.';
-      activatePage('login');
-    }
-
-    function validateRegisterDetails() {
-      const email = val('register-owner-email').toLowerCase();
-      const password = document.getElementById('register-owner-password')?.value || '';
-      const confirmPassword = document.getElementById('register-confirm-password')?.value || '';
-      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-      const passwordOk = password.length >= 6;
-      const confirmOk = passwordOk && password === confirmPassword;
-      markField('register-owner-email', emailOk, 'Please enter a valid mail ID.');
-      markField('register-owner-password', passwordOk, 'Password must be at least 6 characters.');
-      markField('register-confirm-password', confirmOk, 'Passwords must match.');
-      const registerMessage = document.getElementById('register-message');
-      if(registerMessage) {
-        registerMessage.textContent = emailOk && passwordOk && confirmOk ? '' : 'Please correct the highlighted registration details.';
-        registerMessage.style.color = emailOk && passwordOk && confirmOk ? '' : 'var(--secondary)';
-        registerMessage.style.fontWeight = emailOk && passwordOk && confirmOk ? '' : '800';
-      }
-      return emailOk && passwordOk && confirmOk;
-    }
-
-    function registerNewUser(event) {
-      if(event) event.preventDefault();
-      if(!validateRegisterDetails()) {
-        toast('Please fill valid registration details.');
-        activatePage('login');
-        showRegisterForm();
-        return false;
-      }
-      const email = val('register-owner-email').toLowerCase();
-      const password = document.getElementById('register-owner-password')?.value || '';
-      app.owner.name = email.split('@')[0] || 'Guest';
-      app.owner.email = email;
-      document.getElementById('owner-email').value = email;
-      document.getElementById('owner-password').value = password;
-      persistLocal();
-      try { localStorage.setItem('pawpal.registeredUser', JSON.stringify({ email, password })); } catch(e) {}
-      logBackend('/api/login', { owner: app.owner, registration: true });
-      showLoginForm();
-      setTimeout(() => syncBackendSoon(), 0);
-      toast('Registration complete. Please login.');
-      return true;
     }
 
     function suggestBreed() { document.getElementById('pet-breed').value = breedSuggest[val('pet-type')] || ''; }
@@ -2133,7 +2026,7 @@
     if(continueButton) continueButton.onclick = openPetDetails;
     const bmiButton = document.getElementById('calculate-bmi-dashboard');
     if(bmiButton) bmiButton.onclick = savePet;
-    ['owner-name', 'owner-phone', 'owner-email', 'owner-password', 'register-owner-email', 'register-owner-password', 'register-confirm-password', 'doctor-login-name', 'doctor-login-phone', 'doctor-login-email', 'doctor-login-password'].forEach(id => {
+    ['owner-name', 'owner-phone', 'owner-email', 'owner-password', 'doctor-login-name', 'doctor-login-phone', 'doctor-login-email', 'doctor-login-password'].forEach(id => {
       const field = document.getElementById(id);
       if(field) field.addEventListener('input', () => {
         if(id === 'owner-phone' || id === 'doctor-login-phone') field.value = field.value.replace(/\D/g, '').slice(0, 10);

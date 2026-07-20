@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  PawPal Android E2E Appium Test Suite
+  All tests run in a single sequential thread (no parallel) to share one driver session.
+  Priority ordering ensures: Home → Login → Onboarding → Dashboard → Health →
+  Activity → Expense → Community → Adoption → Travel → Doctor Appointment →
+  Doctor Login → Caregivers → Products/Training → PetChat → Navigation
+-->
+<suite name="PawPal E2E Appium Test Suite" verbose="2">
+
+  <listeners>
+    <listener class-name="com.pawpal.tests.utils.TestNGListener"/>
+  </listeners>
+
+  <test name="PawPal Full Application E2E" preserve-order="true">
+
+    <!-- 1. Home Page Tests -->
+    <classes>
+      <class name="com.pawpal.tests.tests.HomePageTest">
+        <methods>
+          <include name="verifyAppLaunchAndHomePage"/>
+          <include name="verifyHeroHeading"/>
+          <include name="verifyGetStartedButton"/>
+          <include name="verifyBrandLogo"/>
+          <include name="verifyNavLinks"/>
+          <include name="verifyGetStartedNavigation"/>
+        </methods>
+      </class>
+
+      <!-- 2. Login Tests -->
+      <class name="com.pawpal.tests.tests.LoginTest">
+        <methods>
+          <include name="verifyLoginPageElements"/>
+          <include name="verifyEmptyFormValidation"/>
+          <include name="verifyNewUserRegistrationAction"/>
+          <include name="verifyInvalidEmailValidation"/>
+          <include name="verifyWeakPasswordValidation"/>
+          <include name="verifySuccessfulLogin"/>
+        </methods>
+      </class>
+
+      <!-- 2A. Separate New User Registration Tests -->
+      <class name="com.pawpal.tests.tests.RegistrationTest">
+        <methods>
+          <include name="verifySeparateRegistrationPage"/>
+          <include name="verifyRegistrationFields"/>
+          <include name="verifyRegistrationValidation"/>
+          <include name="verifyPasswordMismatchValidation"/>
+          <include name="verifySuccessfulRegistrationReturnsToLogin"/>
+          <include name="verifyRegisteredAccountPersistence"/>
+        </methods>
+      </class>
+
+      <!-- 3. Pet Onboarding Tests -->
+      <class name="com.pawpal.tests.tests.OnboardingTest">
+        <methods>
+          <include name="verifyOnboardingFormFields"/>
+          <include name="verifyPetTypeOptions"/>
+          <include name="verifyBreedAutoSuggestion"/>
+          <include name="verifyEmptyPetFormValidation"/>
+          <include name="verifyValidPetSubmission"/>
+          <include name="verifyDashboardShowsPetData"/>
+          <include name="verifyPetIconChange"/>
+        </methods>
+      </class>
+
+      <!-- 4. Dashboard Tests -->
+      <class name="com.pawpal.tests.tests.DashboardTest">
+        <methods>
+          <include name="verifyDashboardLayout"/>
+          <include name="verifyPetNameInSidebar"/>
+          <include name="verifyStatCards"/>
+          <include name="verifyInfoCards"/>
+          <include name="verifyHealthTrackerNavFromSidebar"/>
+          <include name="verifyActivityLogNavFromSidebar"/>
+          <include name="verifyOpenHealthTrackerButton"/>
+          <include name="verifyExpensesCard"/>
+          <include name="verifyPetChatOpenButton"/>
+          <include name="verifyAddNewPetLink"/>
+        </methods>
+      </class>
+
+      <!-- 5. Health Tracker Tests -->
+      <class name="com.pawpal.tests.tests.HealthTrackerTest">
+        <methods>
+          <include name="verifyHealthPageLayout"/>
+          <include name="verifyBMIDisplay"/>
+          <include name="verifyDefaultVaccineList"/>
+          <include name="verifyAddVaccine"/>
+          <include name="verifyEmptyVaccineNotAdded"/>
+          <include name="verifyDefaultMedicineList"/>
+          <include name="verifyAddMedicine"/>
+          <include name="verifyPrescriptionSave"/>
+          <include name="verifyCalendarGrid"/>
+          <include name="verifyCalendarDateClick"/>
+          <include name="verifyPetLocationMap"/>
+          <include name="verifyBMIAdvice"/>
+        </methods>
+      </class>
+
+      <!-- 6. Activity Log Tests -->
+      <class name="com.pawpal.tests.tests.ActivityLogTest">
+        <methods>
+          <include name="verifyActivityPageLayout"/>
+          <include name="verifyDefaultActivities"/>
+          <include name="verifyAddActivity"/>
+          <include name="verifyEmptyActivityNotAdded"/>
+          <include name="verifyZeroMinutesActivityNotAdded"/>
+        </methods>
+      </class>
+
+      <!-- 7. Expense Tracker Tests -->
+      <class name="com.pawpal.tests.tests.ExpenseTrackerTest">
+        <methods>
+          <include name="verifyExpensesPageLayout"/>
+          <include name="verifyDefaultExpenses"/>
+          <include name="verifyAddExpense"/>
+          <include name="verifyEmptyExpenseTitleRejected"/>
+          <include name="verifyZeroAmountExpenseRejected"/>
+          <include name="verifyExpenseTotalOnDashboard"/>
+        </methods>
+      </class>
+
+      <!-- 8. Community Tests -->
+      <class name="com.pawpal.tests.tests.CommunityTest">
+        <methods>
+          <include name="verifyCommunityPageLayout"/>
+          <include name="verifyDefaultPosts"/>
+          <include name="verifyPostStructure"/>
+          <include name="verifyAddPost"/>
+          <include name="verifyEmptyPostRejected"/>
+          <include name="verifyPostActionButtons"/>
+          <include name="verifyCommentToggle"/>
+        </methods>
+      </class>
+
+      <!-- 9. Adoption Tests -->
+      <class name="com.pawpal.tests.tests.AdoptionTest">
+        <methods>
+          <include name="verifyAdoptionPageLayout"/>
+          <include name="verifyAdoptionPetCount"/>
+          <include name="verifyAdoptionCardDetails"/>
+          <include name="verifyAdoptionActionButton"/>
+          <include name="verifyAdoptionModalOpens"/>
+          <include name="verifyAdoptionPetImages"/>
+        </methods>
+      </class>
+
+      <!-- 10. Travel Tests -->
+      <class name="com.pawpal.tests.tests.TravelTest">
+        <methods>
+          <include name="verifyTravelPageLayout"/>
+          <include name="verifyTravelTypeOptions"/>
+          <include name="verifyTravelSearch"/>
+          <include name="verifyMapTitleUpdate"/>
+          <include name="verifyHotelFilter"/>
+          <include name="verifyTravelCardStructure"/>
+        </methods>
+      </class>
+
+      <!-- 11. Doctor Appointment Tests -->
+      <class name="com.pawpal.tests.tests.DoctorAppointmentTest">
+        <methods>
+          <include name="verifyDoctorPageLayout"/>
+          <include name="verifyDoctorCount"/>
+          <include name="verifyDoctorCardDetails"/>
+          <include name="verifyDoctorActionButtons"/>
+          <include name="verifyDoctorProfileModal"/>
+          <include name="verifyBookAppointmentModal"/>
+          <include name="verifyDoctorRatings"/>
+        </methods>
+      </class>
+
+      <!-- 12. Doctor Login & Portal Tests -->
+      <class name="com.pawpal.tests.tests.DoctorLoginTest">
+        <methods>
+          <include name="verifyDoctorLoginPageElements"/>
+          <include name="verifyDoctorDropdown"/>
+          <include name="verifyEmptyDoctorLoginValidation"/>
+          <include name="verifyDoctorInvalidPhone"/>
+          <include name="verifyValidDoctorLogin"/>
+          <include name="verifyDoctorDashboard"/>
+          <include name="verifyDoctorToolCards"/>
+        </methods>
+      </class>
+
+      <!-- 13. Caregivers Tests -->
+      <class name="com.pawpal.tests.tests.CaregiversTest">
+        <methods>
+          <include name="verifyCaregiversPageLayout"/>
+          <include name="verifyCareServiceOptions"/>
+          <include name="verifyCaregiverSearch"/>
+          <include name="verifyCaregiverServiceFilter"/>
+          <include name="verifyCaregiverCardDetails"/>
+          <include name="verifyCaregiverBookModal"/>
+        </methods>
+      </class>
+
+      <!-- 14. Products & Training Tests -->
+      <class name="com.pawpal.tests.tests.ProductsTrainingTest">
+        <methods>
+          <include name="verifyProductsPageLayout"/>
+          <include name="verifyProductCount"/>
+          <include name="verifyProductCardDetails"/>
+          <include name="verifyProductBuyModal"/>
+          <include name="verifyTrainingPage"/>
+          <include name="verifyTrainingCardContent"/>
+        </methods>
+      </class>
+
+      <!-- 15. PetChat AI Tests -->
+      <class name="com.pawpal.tests.tests.PetChatTest">
+        <methods>
+          <include name="verifyChatWindowOpens"/>
+          <include name="verifyInitialGreeting"/>
+          <include name="verifySendMessage"/>
+          <include name="verifyChatInputCleared"/>
+          <include name="verifyBotResponse"/>
+          <include name="verifyChatCloses"/>
+          <include name="verifyEnterKeySendsMessage"/>
+        </methods>
+      </class>
+
+      <!-- 16. Navigation Tests -->
+      <class name="com.pawpal.tests.tests.NavigationTest">
+        <methods>
+          <include name="verifyBottomNavExists"/>
+          <include name="verifyBottomNavItemCount"/>
+          <include name="verifyHomeNavigation"/>
+          <include name="verifyDashboardAccess"/>
+          <include name="verifyProtectedPageGuard"/>
+          <include name="verifyProfileIncompleteGuard"/>
+          <include name="verifyModalOpenClose"/>
+          <include name="verifyToastNotification"/>
+          <include name="verifyDoctorPortalGuard"/>
+          <include name="verifyAllPagesExistInDOM"/>
+        </methods>
+      </class>
+
+      <!-- 17. Data-Driven Validation Tests -->
+      <class name="com.pawpal.tests.tests.DataDrivenValidationTest">
+        <methods>
+          <include name="testEmailValidation"/>
+          <include name="testPhoneValidation"/>
+          <include name="testPasswordValidation"/>
+          <include name="testBMICalculation"/>
+          <include name="testCurrencyFormatting"/>
+          <include name="testBreedSuggestion"/>
+        </methods>
+      </class>
+
+    </classes>
+  </test>
+
+</suite>

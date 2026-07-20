@@ -1,0 +1,181 @@
+PAWPAL ANDROID APPIUM END-TO-END TESTING - STEP BY STEP GUIDE
+
+Folder:
+/Users/surya/Documents/pawpal/appium-tests
+
+This folder is separate from the Android app folder. It does not edit or change the Android application files.
+
+Source package used for this Appium setup:
+/Users/surya/Documents/pawpal/appium-tests/test-input/Combined-PawPal-Webpage-Android-Zips.zip
+
+Excel report format reference used by the Appium reporter:
+/Users/surya/Documents/pawpal/appium-tests/test-input/reference-report/E2E_Test_Report_PancreaScan_2026-06-09T16-22-48.xlsx
+
+The combined source zip was unpacked into:
+/Users/surya/Documents/pawpal/appium-tests/test-input
+
+1. What This Testing Folder Contains
+
+- Appium Java test project using Maven and TestNG.
+- End-to-end Android mobile tests for the PawPal app.
+- More than 400 total test executions through fixed E2E flows and data-driven validation tests.
+- Excel report generation using Apache POI.
+- Excel report format matching the provided E2E reference workbook:
+  Summary, Passed Tests, Failed Tests, Execution Log, Test Details.
+- Failure screenshot capture.
+- Appium server runner script.
+
+2. Main Files
+
+- pom.xml
+  Defines Appium, Selenium, TestNG, Apache POI and reporting dependencies.
+
+- run_tests.sh
+  Starts the Appium run from one command.
+
+- src/test/resources/testng.xml
+  Controls the complete E2E test order.
+
+- src/test/java/com/pawpal/tests/base/BaseTest.java
+  Starts the Android Appium driver and switches into the PawPal WebView.
+
+- src/test/java/com/pawpal/tests/config/AppConfig.java
+  Stores APK path, device name, app package, app activity and test data.
+
+- src/test/java/com/pawpal/tests/utils/ExcelReporter.java
+  Creates the Excel analysis report after the test run.
+
+- src/test/java/com/pawpal/tests/tests/
+  Contains all PawPal E2E test classes.
+
+3. Features Covered By Appium Tests
+
+- App launch
+- Login page
+- New user registration page
+- Registration return to login page
+- Login validations
+- Pet details entry
+- Pet type and breed suggestion
+- BMI calculation
+- Dashboard
+- Health tracker
+- Vaccine entry
+- Medicine entry
+- Prescription save
+- Calendar
+- Activity log
+- Expense tracker
+- Community posts
+- Adoption page
+- Travel search
+- Doctor appointment page
+- Doctor login and doctor portal
+- Caregivers
+- Products
+- Training page
+- PetChat
+- Bottom navigation
+- Modal open and close
+- Data-driven validation for email, phone, password, BMI, currency and breed suggestions
+
+4. One-Time Setup
+
+Install these tools on the machine:
+
+- Java 11 or newer
+- Maven
+- Node.js
+- Appium 2
+- Android Studio
+- Android SDK platform tools
+- Appium UiAutomator2 driver
+
+Install Appium driver once:
+
+appium driver install uiautomator2
+
+5. Start Android Device
+
+Use any one option:
+
+- Start an Android emulator from Android Studio Device Manager.
+- Or connect a real Android phone with USB debugging enabled.
+
+Check device connection:
+
+adb devices
+
+6. Run Complete Appium E2E Test
+
+Open terminal in:
+
+/Users/surya/Documents/pawpal/appium-tests
+
+Run:
+
+./run_tests.sh
+
+Run with a custom APK:
+
+./run_tests.sh --apk "/Users/surya/Documents/pawpal/PawPal-Android-Install.apk"
+
+Run with a custom device:
+
+./run_tests.sh --device "emulator-5554"
+
+Run with another Appium server port:
+
+./run_tests.sh --server "http://127.0.0.1:4725"
+
+7. Report Output
+
+After the test run, reports are saved here:
+
+- Excel analysis report:
+  /Users/surya/Documents/pawpal/appium-tests/test-output/reports/PawPal_E2E_Test_Report.xlsx
+
+- Complete 539-case reference-style catalog (status READY until device execution):
+  /Users/surya/Documents/pawpal/appium-tests/test-output/reports/PawPal_539_Test_Case_Report.xlsx
+
+- Reference-style generated PawPal Appium report:
+  /Users/surya/Documents/pawpal/appium-tests/test-output/reports/E2E_Test_Report_PawPal_Appium_2026-06-23T04-59-11.xlsx
+
+- TestNG HTML report:
+  /Users/surya/Documents/pawpal/appium-tests/target/surefire-reports/emailable-report.html
+
+- Failure screenshots:
+  /Users/surya/Documents/pawpal/appium-tests/test-output/screenshots
+
+- Appium server log:
+  /Users/surya/Documents/pawpal/appium-tests/test-output/appium-server.log
+
+- Console log:
+  /Users/surya/Documents/pawpal/appium-tests/test-output/console.log
+
+8. Test Execution Order
+
+The suite runs in this order:
+
+1. Home and app launch
+2. Login
+3. New user registration
+4. Pet details onboarding
+5. Dashboard
+6. Health tracker
+7. Activity log
+8. Expense tracker
+9. Community
+10. Adoption
+11. Travel
+12. Doctor appointment
+13. Doctor login
+14. Caregivers
+15. Products and training
+16. PetChat
+17. Navigation
+18. Data-driven 400+ validation executions
+
+9. Important Note
+
+The test code was build-checked successfully with Maven. A full Appium run needs an Android emulator or real phone connected and adb available in the terminal.

@@ -1,0 +1,255 @@
+PAWPAL WEBPAGE STEP BY STEP METHOD
+
+Use this file for the PawPal website / webpage version.
+This does not change the Android app folder.
+
+
+WHAT YOU HAVE
+
+1. Main webpage file:
+   /Users/surya/Documents/pawpal/pawpal.html
+
+2. Mobile webpage copy:
+   /Users/surya/Documents/pawpal/PawPal-Mobile-App.html
+
+3. Backend server:
+   /Users/surya/Documents/pawpal/backend/server.js
+
+4. Backend database file:
+   /Users/surya/Documents/pawpal/backend/data/pawpal-db.json
+
+5. Selenium testing folder:
+   /Users/surya/Documents/pawpal/selenium-e2e-node
+
+
+PART 1 - OPEN THE WEBPAGE WITHOUT BACKEND
+
+1. Open Finder on Mac.
+
+2. Go to this folder:
+   /Users/surya/Documents/pawpal
+
+3. Open this file:
+   pawpal.html
+
+4. PawPal will open in the browser.
+
+5. You can also open:
+   PawPal-Mobile-App.html
+
+6. This method is useful for quickly checking the frontend webpage.
+
+
+PART 2 - START THE BACKEND ON YOUR MAC
+
+1. Open Terminal on your Mac.
+
+2. Run this:
+
+   cd /Users/surya/Documents/pawpal
+   node backend/server.js
+
+3. Keep this Terminal window open.
+
+4. The backend runs at:
+   http://localhost:8787
+
+5. Backend data is saved in:
+   /Users/surya/Documents/pawpal/backend/data/pawpal-db.json
+
+
+PART 3 - OPEN THE WEBPAGE WITH BACKEND
+
+1. First start the backend using PART 2.
+
+2. Open this URL in your browser:
+
+   http://127.0.0.1:8787/PawPal-Mobile-App.html
+
+3. PawPal will open with backend support.
+
+4. Use this backend URL when you want login, pet details, expenses, bookings,
+   and other data to save through the backend.
+
+
+PART 4 - USE NEW USER REGISTER
+
+1. Open PawPal webpage.
+
+2. Click Login.
+
+3. On the Login page, click:
+   Register New User
+
+4. A new register page opens.
+
+5. Enter:
+   - Mail ID
+   - Password
+   - Confirm Password
+
+6. Click Register.
+
+7. After register, PawPal returns to the Login page.
+
+8. Login using the same mail ID and password.
+
+
+PART 5 - LOGIN AND ENTER PET DETAILS
+
+1. On Login page, enter user details.
+
+2. Click:
+   Continue to Pet Details
+
+3. The Pet Details page opens.
+
+4. Enter:
+   - Pet type
+   - Pet breed
+   - Pet name
+   - Age
+   - Weight
+   - Licence number
+   - Location
+   - Health concern
+
+5. Click:
+   Calculate BMI & Open Dashboard
+
+6. PawPal opens the Dashboard.
+
+
+PART 6 - USE DASHBOARD
+
+1. View pet name, breed, age, weight, BMI, licence number, and location.
+
+2. Open Health Tracker.
+
+3. Open Pet Location map.
+
+4. Open PetChat AI.
+
+5. View upcoming appointment, expenses, and reminders.
+
+
+PART 7 - USE HEALTH TRACKER
+
+1. Open Health.
+
+2. View BMI score.
+
+3. Add vaccine details.
+
+4. Add medicine details.
+
+5. Save prescription notes.
+
+6. Select appointment date from the calendar.
+
+7. View pet location map.
+
+
+PART 8 - USE OTHER WEBPAGE FEATURES
+
+1. Activity Log:
+   Add walks, play, sleep, food, training, and daily activities.
+
+2. Training:
+   View pet training suggestions.
+
+3. Products:
+   View pet products and place demo orders.
+
+4. Expenses:
+   Add and view expenses.
+
+5. Caregivers:
+   Search pet sitters, walkers, trainers, groomers, and boarding homes.
+
+6. Community:
+   Add posts, comments, likes, and shares.
+
+7. Adoption:
+   View adoption pets and schedule a meet request.
+
+8. Travel:
+   Search pet-friendly hotels, restaurants, and parks.
+
+9. Doctor Appointment:
+   View doctors, select online/offline slots, and start call/video consultation.
+
+10. PetChat AI:
+    Ask demo questions about food, medicine, vaccine, symptoms, travel,
+    adoption, training, and appointments.
+
+
+PART 9 - CHECK BACKEND IS WORKING
+
+1. Start backend using PART 2.
+
+2. Open this URL in browser:
+
+   http://127.0.0.1:8787/api/health
+
+3. If backend works, it shows:
+   ok
+   PawPal Backend
+
+
+PART 10 - RUN SELENIUM TESTING FOR WEBPAGE
+
+1. Open Terminal.
+
+2. Go to Selenium folder:
+
+   cd /Users/surya/Documents/pawpal/selenium-e2e-node
+
+3. Run tests:
+
+   npm test
+
+4. The tests check the complete PawPal webpage end to end.
+
+5. Test result JSON is saved at:
+   /Users/surya/Documents/pawpal/selenium-e2e-node/reports/test-results.json
+
+6. Excel analysis report is saved at:
+   /Users/surya/Documents/pawpal/selenium-e2e-node/reports/PawPal_E2E_Excel_Analysis.xlsx
+
+
+PART 11 - IMPORTANT WEBPAGE FILES
+
+1. Webpage:
+   /Users/surya/Documents/pawpal/pawpal.html
+
+2. Mobile webpage:
+   /Users/surya/Documents/pawpal/PawPal-Mobile-App.html
+
+3. Backend:
+   /Users/surya/Documents/pawpal/backend/server.js
+
+4. Database:
+   /Users/surya/Documents/pawpal/backend/data/pawpal-db.json
+
+5. Selenium tests:
+   /Users/surya/Documents/pawpal/selenium-e2e-node
+
+6. Excel report:
+   /Users/surya/Documents/pawpal/selenium-e2e-node/reports/PawPal_E2E_Excel_Analysis.xlsx
+
+
+IMPORTANT NOTES
+
+1. This file is only for the PawPal webpage.
+
+2. Do not edit the Android folder for webpage testing:
+   /Users/surya/Documents/pawpal/android
+
+3. The webpage can open directly as an HTML file.
+
+4. Backend saving works only when:
+   - Terminal backend is running.
+   - You open the website through http://127.0.0.1:8787
+
+5. For public real-world use, host the backend online with HTTPS and a real database.

@@ -1,0 +1,43 @@
+{
+  "name": "pawpal-selenium-e2e",
+  "version": "2.0.0",
+  "description": "Complete End-to-End Selenium Tests for PawPal Web Application with Excel Report Generation",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/runner.js",
+    "test:headless": "HEADLESS=true node tests/runner.js",
+    "test:home": "node tests/01_home_page.test.js",
+    "test:login": "node tests/02_login_page.test.js",
+    "test:pet": "node tests/03_pet_onboarding.test.js",
+    "test:dashboard": "node tests/04_dashboard.test.js",
+    "test:health": "node tests/05_health_tracker.test.js",
+    "test:activity": "node tests/06_activity_log.test.js",
+    "test:community": "node tests/07_community.test.js",
+    "test:adoption": "node tests/08_adoption.test.js",
+    "test:travel": "node tests/09_travel.test.js",
+    "test:doctors": "node tests/10_doctors.test.js",
+    "test:doctor-login": "node tests/11_doctor_login.test.js",
+    "test:chat": "node tests/12_chat.test.js",
+    "report": "node reports/generate_report.js",
+    "serve": "npx http-server ../ -p 3000 --silent"
+  },
+  "keywords": [
+    "selenium",
+    "testing",
+    "e2e",
+    "pawpal",
+    "webdriver",
+    "excel",
+    "report"
+  ],
+  "author": "PawPal QA Team",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "chromedriver": "^124.0.1",
+    "dayjs": "^1.11.10",
+    "exceljs": "3.10.0",
+    "http-server": "^14.1.1",
+    "selenium-webdriver": "^4.18.1"
+  }
+}
